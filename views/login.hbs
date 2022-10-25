@@ -1,0 +1,18 @@
+<div class="w-100 text-center">
+    <h1>Inicio de sesión</h1>
+</div>
+<div class="col-md-12">
+    <div class="col-md-4 container">
+        <form class="col-md-12 d-flex p-0 flex-column" method="post" action="/api/usuario/login">
+
+            <label class="form-label" for="thumbnail">Nombre de usuario o Email:</label>
+            <input type="text" class="col-md-12 form-control mb-2" name="username" />
+
+            <label class="form-label" for="thumbnail">Contraseña:</label>
+            <input type="password" class="col-md-12 form-control mb-2" name="password" />
+            <button class="btn btn-primary btn-block mb-2" type="submit">Iniciar Sesión</button>
+
+            <p class="text-center">¿No estás registrado? <a href="/register">Regístrate aquí</a>.</p>
+        </form>
+    </div>
+</div>

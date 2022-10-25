@@ -1,0 +1,23 @@
+.chat {
+    height: 300px;
+    border: 1px solid black;
+    overflow-y: scroll;
+}
+
+.chat p {
+    word-break: break-all;
+}
+
+.chat .email {
+    color: blue;
+    font-weight: bolder;
+}
+
+.chat .date {
+    color: brown;
+}
+
+.chat .message {
+    font-style: italic;
+    color: green;
+}

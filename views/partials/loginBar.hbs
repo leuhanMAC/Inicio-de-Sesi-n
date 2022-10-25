@@ -1,0 +1,10 @@
+<div class="d-flex align-items-baseline">
+  {{#if username}}
+  <p href="#" class="text-light text-underline text-uppercase mr-3">{{username}}</p>
+  <a class="btn btn-warning" href="/logout" role="button">Cerrar Sesión</a>
+  {{else}}
+  <a class="btn btn-primary mr-2" href="/login" role="button">Iniciar Sesión</a>
+  <a class="btn btn-warning" href="/register" role="button">Registrar</a>
+
+  {{/if}}
+</div>

@@ -1,0 +1,23 @@
+<div class="w-100 text-center">
+    <h1>Chat</h1>
+</div>
+<div class="col-md-6 container text-center">
+    <div class="input-group col-md-12 d-flex justify-content-center email-container">
+        <span class="input-group-text">Email:</span>
+        <input type="email" class="email-input col-md-6" name="email"/>
+
+    </div>
+    <div class="chat col-md-12 text-left" style="">
+        {{#each messages}}
+            <p>
+                <span class="email">{{this.email}}</span>
+                <span class="date">{{this.date}}: </span>
+                <span class="message">{{this.message}}</span>
+            </p>
+        {{/each}}
+    </div>
+    <div class="col-md-12 d-flex p-0 message-container flex-wrap">
+        <input type="text" class="message-input col-md-8" name="message"/>
+        <button class="btn btn-primary col-md-4" onclick="sendMessage()">Send</button>
+    </div>
+</div> 
